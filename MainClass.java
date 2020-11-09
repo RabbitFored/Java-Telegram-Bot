@@ -6,7 +6,7 @@ public class MainClass {
     public static void main(String[] args) throws TelegramApiException {
         TelegramBotsApi telegramBotsApi = new TelegramBotsApi(DefaultBotSession.class);
         try {
-            telegramBotsApi.registerBot(new SpamBot());
+            telegramBotsApi.registerBot(new MavenJav());
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }
